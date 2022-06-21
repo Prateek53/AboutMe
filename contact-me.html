@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact-me</title>
+  </head>
+
+  <body>
+    <h1>Contact Me</h1>
+    <h4>Address</h4>
+    <p>House No:xyz,Block a,City,Country</p>
+    <h4>Phone Number</h4>
+    <p>1234567890</p>
+    <h4>Email</h4>
+    <p>myemail@email.com</p>
+    <hr />
+    <form action="mailto:abc@gmail.com" method="post" enctype="text/plain">
+      <!--Here mailto opens the default mail app and we have to add "post" to method so that when email app opens,the message gets postedcand we used enctype so that we dont get any funny characters-->
+      <!--if we dont add method="post" then it will open the mail app but wont post the labels there-->
+      <label>Your Name:</label>
+      <input type="text" name="Name" placeholder="Enter Your Name" />
+      <!--Here and in all input tags we can add name="" so that when it gets posted in mail app,it says name=*Entered name*-->
+      <br />
+      <label for="">Your Email:</label>
+      <input type="email" name="Email" placeholder="Enter your Email" />
+      <!--type="email" makes sure its of proper email format-->
+      <br />
+      <label for="">Your Message:</label>
+      <br />
+      <textarea
+        name="Message "
+        id=""
+        cols="20"
+        rows="5"
+        placeholder="Enter Your Message"
+      ></textarea>
+      <!--we have to add the name="message" so that when mail opens it says message= *entered message*-->
+      <br />
+      <input type="checkbox" />
+      Do you want to sign up for the email list?
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

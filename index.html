@@ -1,0 +1,154 @@
+<!--this is the boiler plate code-->
+<!DOCTYPE html>
+<!--specifies the version of HTML,here its html 5-->
+<html lang="en">
+  <!--everything in betweeen opening and closing tag is html code-->
+
+  <head>
+    <!--holds info of the page or its metadata-->
+    <meta charset="UTF-8" />
+    <!--telling the browser that all the text is endoded using utf 8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--gives browser info about the website-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--These meta tags render or tells browser how to display the page-->
+    <title>Prateek's Website</title>
+    <!--Contains title-->
+  </head>
+
+  <body>
+    <!-- Make sure to practice SEO and use header main footer etc,its not used here for now -->
+    <!--The main body of the page-->
+    <!--<img> is used to insert image either from net or from the same directory(using file name or path(not complete)) and alt provides a text if image cant be displayed and helps google to show the site to someone who searched those keyword-->
+    <table cellspacing="20">
+      <tr>
+        <td>
+          <img
+            src="images\PrateekNew.jpg"
+            alt="Prateek Profile Picture"
+            width="250"
+            height="250"
+          />
+        </td>
+        <td>
+          <h1>Prateek Raj</h1>
+          <p>
+            <!--<em> emphasises the text and makes it italic, we can also use <i>-->
+            <em
+              >Student currently pursuing B.Tech in
+              <!--<strong> makes the text bold and we can alkso use <b>-->
+              <strong>Information Technology</strong>
+            </em>
+          </p>
+          <!-- <p> Formats text into paragraph and insert into a new line-->
+          <p>
+            <!--The <a> tag is used to insert hyperlink-->
+            Hi and welcome to my website! I'm Prateek a student of
+            <a href="https://mait.ac.in/"
+              >Maharaja Agrasen Institute of Technology</a
+            >
+            currently pursuing Bachelor Of Technology in Information Technology.
+            Pleased to meet you.
+          </p>
+        </td>
+      </tr>
+    </table>
+    <!--<hr> adds a horizontal line-->
+    <hr size="3" noshade />
+    <h3><strong>Education</strong></h3>
+    <!--<ul> is used to make bullets in unordered manner using the <li>-->
+    <ul>
+      <li>Class X CBSE Board - <b>95%</b></li>
+      <li>CLass XII CBSE Board - <b>92.4%</b></li>
+      <li>B.Tech. upto Sem 3 - <b> 9.63 CGPA </b></li>
+    </ul>
+    <hr size="3" noshade />
+    <!-- <h3>Semester Results</h3> -->
+    <!--We can add tables using <table> and it can also have header(bold by default),body and foot-->
+    <!--We can also skip head body and foot and result will be same but it helps us to format it better or function differently-->
+    <table>
+      <caption>
+        <h3>Semester Result</h3>
+      </caption>
+      <!--we can also add border by <table border="">-->
+      <thead>
+        <!-- thead is used to wrap tr in it -->
+        <tr>
+          <th>SEMESTER</th>
+          <th>CGPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>First</td>
+          <td>9.704</td>
+        </tr>
+        <tr>
+          <td>Second</td>
+          <td>9.926</td>
+        </tr>
+        <tr>
+          <td>Third</td>
+          <td>9.286</td>
+        </tr>
+      </tbody>
+      <!--<tfoot>
+        <tr><td></td></tr>
+      </tfoot> appears at the bottom of the table,like sumof all row elements of a column-->
+    </table>
+    <hr size="3" noshade />
+    <h3>
+      <strong>
+        <!--The href can either have the link to hobbies.html or the file name which is in the same directory or the path-->
+        <a href="hobbies.html">Hobbies</a>
+      </strong>
+    </h3>
+    <!--<ol> is used to create a ordered list like 1. 2. 3. we have attributes to make the bullets 
+        Roman(type) or start from a number of our choice(start)-->
+    <ol>
+      <li>Coding</li>
+      <li>Playing Games</li>
+      <li>Watching Anime and WebShows</li>
+    </ol>
+    <hr size="3" noshade />
+    <h3>Skills</h3>
+    <!--tables can be nested as well-->
+    <table cellspacing="10">
+      <tr>
+        <td>
+          <table cellspacing="10">
+            <tr>
+              <td>C</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>WebDevelopment</td>
+              <td>⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table cellspacing="10">
+            <tr>
+              <td>C++</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Gaming</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <a href="contact-me.html"><h3>Contact Me</h3></a>
+    <br />
+    <!--The order of attributes dont matter as long as they are separated by space so we can add download at end as well-->
+    <a
+      href=""
+      download="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf"
+      >Here's a little HTML cheatsheet for you!</a
+    >
+    <!--It still needs to have the href attribute as blank in order to download-->
+  </body>
+</html>
